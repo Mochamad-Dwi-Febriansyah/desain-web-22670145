@@ -3,15 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latihan 8 Form</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h2>Form Pelanggan</h2>
     <form action="">
-        <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname">
-        <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname">
+
+        <label for="fname">First Name</label><br>
+        <input type="text" name="fname" id="fname" required><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lname" id="lname" disabled><br>
+
+        <label for="pesan">Pesan</label><br>
+        <input type="text" name="pesan" id="pesan" ><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin</label><br>
+        <input type="radio" name="jenis_kelamin" id="jenis_kelamin">
+        <label for="jenis_kelamin">Laki Laki</label>
+        <input type="radio" name="jenis_kelamin" id="jenis_kelamin">
+        <label for="jenis_kelamin">Perempuan</label><br>
+
+        <label for="status_pesanan">Status Pesanan</label><br>
+        <select name="status_pesanan" id="status_pesanan">
+            <option value="makan_sini">Makan Sini</option>
+            <option value="bungkus">Bungkus</option>
+        </select><br>
+
+        <label for="keterangan">Keterangan</label><br>
+        <textarea name="keterangan" id="keterangan" cols="30" rows="10" placeholder="keterangan"></textarea><br>
+
+        <button type="submit">Kirim</button>
     </form>
 </body>
 </html>
